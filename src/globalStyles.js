@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import backgroundStars from "./img/bg-stars.svg";
 
 const GlobalStyle = createGlobalStyle`
     :root {
@@ -9,6 +10,11 @@ const GlobalStyle = createGlobalStyle`
         --color-secondary-very-dark: hsl(234, 17%, 12%);
 
     }
+    *, *::after,*::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     html {
         font-size: 62.5%;
     }
@@ -16,6 +22,8 @@ const GlobalStyle = createGlobalStyle`
     body {
         font-family: "Red Hat Text", sans-serif;
         font-size: 1.4rem;
+        background-image: url(${backgroundStars});
+        background-color: var(--color-secondary-dark);
     }
 
 `;
