@@ -1,12 +1,14 @@
 import styled from "styled-components";
 import Container from "../components/Container";
-import backgroundStarts from "../img/bg-stars.svg";
+import backgroundMountains from "../img/pattern-hills.svg";
 const Main = styled.main`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-secondary-dark);
-  background-image: url(${backgroundStarts});
+  background-image: url(${backgroundMountains});
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
 `;
 
 const Heading = styled.h1`
